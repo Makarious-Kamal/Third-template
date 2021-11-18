@@ -11,7 +11,6 @@ html{
 }
 body{
     font-family: 'Cairo', sans-serif;
-    overflow-x: hidden;
 }
 ul{
     list-style: none;
@@ -137,7 +136,6 @@ h2.special-heading:hover::after{
     transform: rotate(180deg);
 }
 /* components end  */
-
 
 /* header start */
 header{
@@ -316,9 +314,6 @@ header nav .mega-menu a i{
     max-width: 530px;
 }
 @media (max-width: 767px){
-    .landing{
-        height: calc(100vh - 97px);
-    }
     .landing .container .text h1{
         font-size: 28px;
     }
