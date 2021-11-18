@@ -331,6 +331,9 @@ header nav .mega-menu a i{
     position: relative;
 }
 @media (max-width: 991px){
+    .landing{
+        height: calc(100vh - 97px);
+    }
     .landing .container .text{
         text-align: center;
     }
