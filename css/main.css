@@ -315,6 +315,9 @@ header nav .mega-menu a i{
     max-width: 530px;
 }
 @media (max-width: 767px){
+    .landing{
+        height: calc(100vh - 97px);
+    }
     .landing .container .text h1{
         font-size: 28px;
     }
@@ -920,12 +923,14 @@ header nav .mega-menu a i{
     display: flex;
     align-items: center;
     padding: 30px;
-    margin-bottom: 20px;
     background-color: #f6f5f5;
     border-radius: 8px;
     border: 2px solid white;
     position: relative;
     z-index: 2;
+}
+.how-it-works .container .info .box:not(:last-child){
+    margin-bottom: 20px;
 }
 .how-it-works .container .info .box::before{
     content: '';
