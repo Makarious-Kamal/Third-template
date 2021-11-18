@@ -315,6 +315,9 @@ header nav .mega-menu a i{
     max-width: 530px;
 }
 @media (max-width: 767px){
+    .landing{
+        height: calc(100vh - 97px);
+    }
     .landing .container .text h1{
         font-size: 28px;
     }
