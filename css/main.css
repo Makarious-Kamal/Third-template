@@ -43,6 +43,7 @@ ul{
 /* variables start  */
 :root{
     --main-color: #2196f3;
+    --main-color-alt: #1787e0;
     --section-background-color: #ececec;
     --transition: 0.3s;
     --section-padding: 100px;
@@ -901,17 +902,15 @@ header nav .mega-menu a i{
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 40px;
 }
 .how-it-works .container .image{
     flex-basis: calc(50% - 40px);
-    margin: 0 40px 0 0;
 }
 @media (max-width: 991px){
     .how-it-works .container{
         flex-direction: column;
-    }
-    .how-it-works .container .image{
-        margin: 0 0 50px;
+        gap: 40px;
     }
 }
 .how-it-works .container .image img{
@@ -923,6 +922,7 @@ header nav .mega-menu a i{
 .how-it-works .container .info .box{
     display: flex;
     align-items: center;
+    gap: 30px;
     padding: 30px;
     background-color: #f6f5f5;
     border-radius: 8px;
@@ -961,15 +961,157 @@ header nav .mega-menu a i{
 .how-it-works .container .info img{
     max-width: 100%;
     width: 65px;
-    margin: 0 30px 0 0;
 }
 @media (max-width: 767px){
     .how-it-works .container .info .box{
         flex-direction: column;
         text-align: center;
     }
-    .how-it-works .container .info img{
-        margin: 0 0 30px 0;
-    }
 }
 /* end how it works */
+
+/* start EVENTS */
+.events{
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    position: relative;
+}
+.events .dots{
+    background-image: url(../imgs/dots.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    max-width: 205px;
+}
+.events .up.dots{
+    top: 160px;
+    right: 0;
+}
+.events .down.dots{
+    bottom: 160px;
+    left: 0;
+}
+.events .container{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.events .container .image{
+    flex-basis: 40%;
+}
+@media (max-width: 991px){
+    .events .container{
+        flex-direction: column;
+    }
+    .events .container .image img{
+        width: 450px;
+    }
+}
+.events .container .image img{
+    max-width: 100%;
+}
+.events .container .info{
+    flex-basis: 60%;
+    text-align: center;
+}
+.events .container .info .timer{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.events .container .info .timer .unit{
+    border: 1px solid #d4d4d4;
+    border-radius: 6px;
+    width: 75px;
+    max-width: 100%;
+    transition: var(--transition);
+}
+.events .container .info .timer .unit:hover{
+    border-color: var(--main-color);
+}
+.events .container .info .timer .unit span{
+    display: block;
+}
+.events .container .info .timer .unit span:first-of-type{
+    font-size: 35px;
+    padding: 15px 0;
+    font-weight: bold;
+    border-bottom: inherit;
+    color: var(--main-color);
+}
+.events .container .info .timer .unit span:last-of-type{
+    font-size: 13px;
+    padding: 8px 0;
+}
+.events .container .info h3{
+    font-size: 30px;
+    margin: 40px 0 20px;
+}
+.events .container .info p{
+    font-size: 19px;
+    line-height: 1.7;
+    color: var(--main-paragraph-color);
+}
+.events .container form{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: #f6f5f5;
+    padding: 30px;
+    border-radius: 50px;
+    width: 600px;
+    max-width: 100%;
+    margin: 80px 0 0 ;
+}
+.events .container form input[type=email]{
+    padding: 20px;
+    border-radius: inherit;
+    border: none;
+    width: calc(100% - 139px);
+    caret-color: var(--main-color);
+}
+.events .container form input[type=submit]{
+    padding: 20px;
+    border-radius: inherit;
+    color: white;
+    background-color: var(--main-color);
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    width: 109px;
+    max-width: 100%;
+    transition: var(--transition);
+}
+@media (max-width: 767px){
+    .events .container form{
+        flex-direction: column;
+        border-radius: 0;
+        padding: 10px;
+    }
+    .events .container form input[type=email]{
+        width: 100%;
+    }
+    .events .container form input[type=submit]{
+        width: 100%;
+    }
+}
+.events .container form input[type=email]:focus{
+    outline: none;
+}
+.events .container form input[type=email]:focus::placeholder{
+    transition: var(--transition);
+}
+.events .container form input[type=email]:focus::placeholder{
+    color: transparent;
+}
+.events .container form input[type=submit]:hover{
+    background-color: var(--main-color-alt);
+}
+/* end EVENTS */
