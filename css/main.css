@@ -1002,6 +1002,9 @@ header nav .mega-menu a i{
 .events .container .image{
     flex-basis: 40%;
 }
+.events .container .image img{
+    max-width: 100%;
+}
 @media (max-width: 991px){
     .events .container{
         flex-direction: column;
@@ -1009,9 +1012,6 @@ header nav .mega-menu a i{
     .events .container .image img{
         width: 450px;
     }
-}
-.events .container .image img{
-    max-width: 100%;
 }
 .events .container .info{
     flex-basis: 60%;
