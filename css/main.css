@@ -1197,7 +1197,7 @@ header nav .mega-menu a i{
     height: 100%;
     clip-path: polygon(0% 100%, 50% 85%, 100% 100%);
     background-color: white;
-    transition: var(--transition);
+    transition: calc(var(--transition) + 0.1s);
 }
 .pricing-plans .container .plan:hover span.label::after{
     background-color: #f6f6f6;
