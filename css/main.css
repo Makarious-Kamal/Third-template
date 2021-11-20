@@ -1266,10 +1266,6 @@ header nav .mega-menu a i{
     background-color: #f4f4f4;
     font-weight: bold;
 }
-.top-videos .container ul{
-    width: 300px;
-    max-width: 100%;
-}
 .top-videos .container ul li{
     padding: 20px;
     transition: var(--transition);
@@ -1291,6 +1287,15 @@ header nav .mega-menu a i{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+@media (min-width: 992px){
+    .top-videos .container .video-preview{
+        width: calc(100% - 300px);
+    }
+    .top-videos .container .list{
+        width: 300px;
+        max-width: 100%;
+    }
 }
 .top-videos .container .video-preview img{
     max-width: 100%;
