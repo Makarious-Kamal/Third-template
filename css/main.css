@@ -1243,3 +1243,61 @@ header nav .mega-menu a i{
     color: white;
 }
 /* end PRICING PLANS  */
+
+/* start TOP VIDEOS */
+.top-videos{
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+}
+.top-videos .container .holder{
+    display: flex;
+    border: 1px solid #ddd;
+}
+@media (max-width: 991px){
+    .top-videos .container .holder{
+        flex-direction: column;
+    }
+}
+.top-videos .container .name{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+.top-videos .container ul{
+    width: 300px;
+    max-width: 100%;
+}
+.top-videos .container ul li{
+    padding: 20px;
+    transition: var(--transition);
+    cursor: pointer;
+    border-top: 1px solid var(--section-background-color);
+}
+.top-videos .container ul li:hover{
+    color: var(--main-color);
+    background-color: #fafafa;
+}
+.top-videos .container ul li span{
+    display: block;
+    margin: 10px 0 0;
+    color: var(--main-paragraph-color);
+}
+.top-videos .container .video-preview{
+    background-color: #e2e2e2;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.top-videos .container .video-preview img{
+    max-width: 100%;
+}
+.top-videos .container .video-preview p{
+    background-color: white;
+    padding: 20px;
+    margin-top: 10px;
+}
+/* end TOP VIDEOS */
