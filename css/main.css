@@ -1253,14 +1253,12 @@ header nav .mega-menu a i{
     display: flex;
     border: 1px solid #ddd;
 }
+.top-videos .container .list{
+    flex-basis: 300px;
+}
 @media (max-width: 991px){
     .top-videos .container .holder{
         flex-direction: column;
-    }
-}
-@media (min-width: 992px){
-    .top-videos .container .list{
-        min-width: 300px;
     }
 }
 .top-videos .container .name{
@@ -1292,6 +1290,7 @@ header nav .mega-menu a i{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    flex-basis: calc(100% - 300px);
 }
 .top-videos .container .video-preview img{
     max-width: 100%;
