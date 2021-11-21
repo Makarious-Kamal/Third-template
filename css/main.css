@@ -1326,6 +1326,11 @@ header nav .mega-menu a i{
     width: fit-content;
     position: relative;
 }
+@media (max-width: 767px){
+    .stats h2{
+        font-size: 35px;
+    }
+}
 .stats .container{
     position: relative;
     display: grid;
@@ -1414,6 +1419,11 @@ header nav .mega-menu a i{
     margin: 60px 0 30px;
     letter-spacing: -1px;
 }
+@media (max-width: 767px){
+    .discount h2{
+        font-size: 35px;
+    }
+}
 .discount .info h2{
     color: white;
 }
@@ -1430,42 +1440,40 @@ header nav .mega-menu a i{
 }
 .discount .form{
     flex: 1;
-    padding: 20px;
+    display: flex;
+    justify-content: center;
 }
-.discount .form h2{
-    letter-spacing: -2px;
+.discount .form .content h2{
+
 }
-.discount .form form{
+.discount .form .content form{
     display: flex;
     flex-direction: column;
     gap: 25px;
-    align-items: center;
 }
-.discount .form form input,
-.discount .form form textarea{
+.discount .form .content form input,
+.discount .form .content form textarea{
     background-color: #f9f9f9;
     padding: 15px;
     border: none;
     border-bottom: 1px solid #ccc;
-    width: 300px;
-    max-width: 100%;
     caret-color: var(--main-color);
 }
-.discount .form form input:focus,
-.discount .form form textarea:focus{
+.discount .form .content form input:focus,
+.discount .form .content form textarea:focus{
     outline: none;
 }
-.discount .form form input[type=submit]{
+.discount .form .content form input[type=submit]{
     font-weight: bold;
     font-size: 20px;
     color: white;
     background-color: var(--main-color);
     transition: var(--transition);
 }
-.discount .form form input[type=submit]:hover{
+.discount .form .content form input[type=submit]:hover{
     background-color: var(--main-color-alt);
 }
-.discount .form form textarea{
+.discount .form .content form textarea{
     height: 200px;
 }
 /* end REQUEST A DISCOUNT */
