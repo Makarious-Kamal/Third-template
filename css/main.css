@@ -1555,6 +1555,17 @@ footer .box.three .line{
     gap: 15px;
     margin-bottom: 20px;
 }
+@media (max-width:767px){
+    footer{
+        text-align: center;
+    }
+    footer .box.one ul.icons{
+        justify-content: center;
+    }
+    footer .box.three .line{
+        flex-direction: column;
+    }
+}
 footer .box.three .line i{
     font-size: 25px;
     color: var(--main-color);
