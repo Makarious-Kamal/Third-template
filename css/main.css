@@ -848,7 +848,7 @@ header nav .mega-menu a i{
     position: absolute;
     top: 0;
     left: 80px;
-    height: 100%;
+    height: calc(100% + 0.4px);
     width: 50px;
     background-color: #d5d5d5;
     transform: skewX(-30deg);
