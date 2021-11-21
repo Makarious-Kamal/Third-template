@@ -1538,8 +1538,14 @@ footer .box.two ul.links a{
     padding: 15px 0;
     transition: var(--transition);
 }
+footer .box.two ul.links li{
+    transition: var(--transition);
+}
+footer .box.two ul.links li:hover{
+    padding-left: 10px;
+    color: white;
+}
 footer .box.two ul.links a:hover{
-    padding: 15px 10px;
     color: white;
 }
 footer .box.two ul.links a:before{
