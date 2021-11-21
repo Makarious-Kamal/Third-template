@@ -1445,9 +1445,6 @@ header nav .mega-menu a i{
     display: flex;
     justify-content: center;
 }
-.discount .form .content h2{
-
-}
 .discount .form .content form{
     display: flex;
     flex-direction: column;
@@ -1460,6 +1457,10 @@ header nav .mega-menu a i{
     border: none;
     border-bottom: 1px solid #ccc;
     caret-color: var(--main-color);
+}
+.discount .form .content form textarea{
+    height: 200px;
+    resize: none;
 }
 .discount .form .content form input:focus,
 .discount .form .content form textarea:focus{
@@ -1474,8 +1475,5 @@ header nav .mega-menu a i{
 }
 .discount .form .content form input[type=submit]:hover{
     background-color: var(--main-color-alt);
-}
-.discount .form .content form textarea{
-    height: 200px;
 }
 /* end REQUEST A DISCOUNT */
