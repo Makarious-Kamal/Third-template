@@ -1301,3 +1301,81 @@ header nav .mega-menu a i{
     margin-top: 10px;
 }
 /* end TOP VIDEOS */
+
+/* start STATS */
+.stats{
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    background-color: var(--section-background-color);
+    background-image: url(../imgs/stats.jpg);
+    background-size: cover;
+    position: relative;
+}
+.stats::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255 255 255 / 95%);
+}
+.stats h2{
+    font-size: 40px;
+    margin: 0 auto 50px;
+    width: fit-content;
+    position: relative;
+}
+.stats .container{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+.stats .container .stat{
+    background-color: white;
+    padding: 30px;
+    text-align: center;
+    opacity: 80%;
+    transition: var(--transition);
+    position: relative;
+}
+.stats .container .stat::before,
+.stats .container .stat::after{
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 0;
+    background-color: var(--main-color);
+    transition: 1s;
+}
+.stats .container .stat::before{
+    left: 0;
+    bottom: 0;
+}
+.stats .container .stat::after{
+    right: 0;
+    top: 0;
+}
+.stats .container .stat:hover::before,
+.stats .container .stat:hover::after{
+    height: 100%;
+}
+.stats .container .stat:hover{
+    opacity: 100%;
+}
+.stats .container .stat span{
+    display: block;
+}
+.stats .container .stat .number{
+    font-size: 50px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.stats .container .stat .text{
+    color: var(--main-color);
+    font-style: italic;
+    font-weight: bold;
+    font-size: 20px;
+}
+/* end STATS */
