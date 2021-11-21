@@ -1400,6 +1400,8 @@ header nav .mega-menu a i{
     background-size: cover;
     position: relative;
     flex: 1;
+    display: flex;
+    justify-content: center;
 }
 .discount .info::before{
     content: '';
